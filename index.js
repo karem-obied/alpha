@@ -70,6 +70,7 @@ btn.addEventListener("click", (e) => {
       To: "alphaagencysy@gmail.com",
       From: `${data.email}`,
       Subject: `Customer Support From The Website`,
+      body:'',
       html: `<h1>NAME : ${data.name}</h1>
       <p>${data.message}</p>`,
     }).then((message) => alert(message));
