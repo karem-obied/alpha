@@ -890,14 +890,10 @@ header .humberger {
   }
 
   .body .container .contact .form form .formcontrol input {
-    width: 100%;
+    width: 320px;
   }
   .body .container .contact .form form .formcontrol textarea {
-    width: 100%;
-  }
-
-  .body .container .contact .form form .formcontrol.message textarea {
-    max-width: 100%;
+    width: 320px;
   }
 
   .body .container .contact .form form button {

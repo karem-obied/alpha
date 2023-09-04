@@ -51,3 +51,25 @@ document.querySelector(".body textarea").addEventListener("click", () => {
 document.querySelector(".humberger").addEventListener("click", () => {
   document.querySelector("header ul").classList.toggle("show");
 });
+
+let form = document.querySelector("form");
+
+let btn = document.querySelector("form button");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let data = {
+    name: inputs[0].value,
+    email: inputs[1].value,
+    message: document.querySelector(".body textarea").value,
+  };
+  if (data.name !== "" && data.email !== "" && data.message !== "")
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "alphaagencysy@gmail.com",
+      Password: "064842C50EA2C9F04DB5425328073979E97C",
+      To: "alphaagencysy@gmail.com",
+      From: `${data.email}`,
+      Subject: `Customer Support From The Website`,
+      Body: `name:${data.name}/nsupject:${data.message}`,
+    }).then((message) => alert(message));
+});
