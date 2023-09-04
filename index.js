@@ -47,3 +47,7 @@ document.querySelector(".body textarea").addEventListener("click", () => {
     .querySelector(".body textarea")
     .parentElement.classList.add("active");
 });
+
+document.querySelector(".humberger").addEventListener("click", () => {
+  document.querySelector("header ul").classList.toggle("show");
+});

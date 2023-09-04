@@ -669,3 +669,259 @@ textarea:focus {
   line-height: normal;
   align-self: stretch;
 }
+
+header .humberger span {
+  width: 100%;
+  height: 5px;
+  background-color: #ff5454;
+  border-radius: 5px;
+}
+header .humberger {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (width < 426px) {
+  .body {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  img {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+  }
+  .body .container {
+    width: 100%;
+  }
+  .body .container header h1 {
+    font-size: 30px;
+  }
+
+  .body .container header ul {
+    display: none;
+    flex-direction: column;
+    background-color: #d9d9d9;
+    justify-content: center;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    top: 60px;
+    align-items: center;
+    gap: 10px;
+  }
+  .body .container header ul.show {
+    display: flex;
+  }
+  .body .container header .humberger {
+    display: flex;
+  }
+
+  .body .container header ul li a {
+    font-size: 20px;
+  }
+
+  .body .container .hero {
+    flex-direction: column;
+  }
+
+  .body .container .hero .text {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .body .container .hero .text h1 {
+    font-size: 32px;
+  }
+
+  .body .container .hero .text p {
+    font-size: 16px;
+    line-height: 120%; /* 28.8px */
+  }
+
+  .body .container .hero .text button {
+    font-size: 20px;
+  }
+
+  .body .container .hero .img {
+    width: 100%;
+  }
+
+  .body .container .qoute {
+    font-size: 22px;
+  }
+
+  .body .container .chooseus {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .body .container .chooseus .feature {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+  }
+
+  .body .container .chooseus .feature p {
+    font-size: 18px;
+  }
+
+  .body .container .services {
+    gap: 10px;
+  }
+  .body .container .services .head h1 {
+    width: fit-content;
+    font-size: 30px;
+  }
+  .body .container .services .head p {
+    font-size: 18px;
+  }
+
+  .body .container .services .content {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .body .container .services .content .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .body .container .services .content .nav h3 {
+    width: 48%;
+    font-size: 18px;
+  }
+
+  .body .container .services .content .contentText {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .body .container .services .content .contentText .img {
+    width: 100%;
+  }
+
+  .body .container .services .content .contentText .text {
+    padding: 10px;
+  }
+
+  .body .container .services .content .contentText .text h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .body .container .services .content .contentText .text p {
+    font-size: 16px;
+  }
+  .body .container .services .content .contentText .text button {
+    font-size: 18px;
+  }
+
+  .body .container .qoute2 p {
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+  }
+
+  .body .container .team .head h1 {
+    width: fit-content;
+    font-size: 30px;
+  }
+
+  .body .container .team .head p {
+    font-size: 16px;
+  }
+
+  .body .container .team .content .person {
+    flex-direction: column;
+  }
+
+  .body .container .team .content .person .img {
+    width: 100%;
+  }
+
+  .body .container .team .content {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .body .container .team .content .person .text {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    gap: 15px;
+  }
+
+  .body .container .team .content .person .text .top h3 {
+    font-size: 25px;
+  }
+
+  .body .container .team .content .person .text .top span {
+    font-size: 16px;
+  }
+
+  .body .container .team .content .person .text p {
+    font-size: 18px;
+  }
+
+  .body .container .contact {
+    flex-direction: column;
+  }
+  .body .container .contact .form {
+    padding: 10px;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .body .container .contact .form h1 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+  }
+
+  .body .container .contact .form form {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .body .container .contact .form form .formcontrol input {
+    width: 100%;
+  }
+  .body .container .contact .form form .formcontrol textarea {
+    width: 100%;
+  }
+
+  .body .container .contact .form form .formcontrol.message textarea {
+    max-width: 100%;
+  }
+
+  .body .container .contact .form form button {
+    font-size: 18px;
+  }
+
+  .body .container footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .body .container footer h1 {
+    width: fit-content;
+    font-size: 30px;
+  }
+
+  .body .container footer .links {
+    gap: 15px;
+  }
+
+  .body .container footer p {
+    width: fit-content;
+    align-self: center;
+  }
+}
